@@ -32,6 +32,17 @@
     </div>
 </nav>
 
+<!-- Selector de color para la barra de navegación -->
+<div class="container mt-5 pt-5">
+    <label for="navbarColor" class="form-label">Selecciona el color de la barra de navegación:</label>
+    <select id="navbarColor" class="form-select" onchange="changeNavbarColor(this.value)">
+        <option value="navbar-dark">Predeterminado</option>
+        <option value="navbar-light">Claro</option>
+        <option value="navbar-blue">Azul</option>
+        <option value="navbar-green">Verde</option>
+    </select>
+</div>
+
 <!-- Contenedor de Secciones -->
 <div class="container mt-5 pt-5">
     <!-- Informes -->
@@ -104,11 +115,16 @@
         const sections = document.querySelectorAll('.section-content');
         sections.forEach(section => section.classList.remove('active'));
         document.getElementById(sectionId).classList.add('active');
-        
+
         const navbarCollapse = document.querySelector('.navbar-collapse');
         if (navbarCollapse.classList.contains('show')) {
             new bootstrap.Collapse(navbarCollapse).toggle();
         }
+    }
+
+    function changeNavbarColor(colorClass) {
+        const navbar = document.querySelector('.navbar');
+        navbar.className = `navbar navbar-expand-lg ${colorClass} fixed-top shadow`;
     }
 </script>
 

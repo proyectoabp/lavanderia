@@ -8,7 +8,20 @@ body {
 }
 
 .navbar-dark {
-    background-color: #cd6fe0;
+    background-color: #cd6fe0; /* Color predeterminado */
+}
+
+.navbar-light {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar-blue {
+    background-color: #007bff;
+}
+
+.navbar-green {
+    background-color: #28a745;
 }
 
 .section-content {
