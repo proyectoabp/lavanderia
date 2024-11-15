@@ -11,10 +11,6 @@ body {
     background-color: #3498db; /* Azul claro */
 }
 
-.navbar-green {
-    background-color: #28a745; /* Verde */
-}
-
 .section-content {
     display: none;
     opacity: 0;
