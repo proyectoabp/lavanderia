@@ -7,21 +7,12 @@ body {
     color: #28a745;
 }
 
-.navbar-dark {
-    background-color: #cd6fe0; /* Color predeterminado */
-}
-
-.navbar-light {
-    background-color: #ffffff;
-    color: #333;
-}
-
-.navbar-blue {
-    background-color: #007bff;
+.navbar-light-blue {
+    background-color: #3498db; /* Azul claro */
 }
 
 .navbar-green {
-    background-color: #28a745;
+    background-color: #28a745; /* Verde */
 }
 
 .section-content {
